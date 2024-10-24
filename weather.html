@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="shortcut icon" href="Images/sunny_sunshine_weather_2778.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+
+</head>
+
+<body>
+    <!-- First section start from here where user can input the city detail -->
+    <section class="city-input-detail">
+        <div class="cityname">
+            <h1 class="city-head">Kota</h1>
+            <p class="date">16-07-2024</p>
+        </div>
+        <div class="inputfield">
+            <input type="text" placeholder="Enter City" id="city-name">
+            <button id="search-button">Search</button>
+            <button id="location-button"><i class="fa-solid fa-location-crosshairs"></i></button>
+            <select id="recent-cities" style="display: none;"></select>
+           
+        </div>
+    </section>
+
+    <!-- First section end here -->
+
+    <!-- Second section start from here -->
+    <section class="second-sec">
+        <div class="left-sec">
+            <div class="tempt">
+                <h1 class="temperature-rating">15</h1>
+            </div>
+            <div class="tempt-rating">
+                <h4>°C | °F</h4>
+                <p id="temperature-message">Partly Cloudy</p>
+            </div>
+        </div>
+        <div class="right-sec">
+            <div class="img"><img src="Images/cloudy.png" alt="" id="image-source"></div>
+            <div class="extra-msg">
+                <p><span><i class="fa-solid fa-temperature-three-quarters"></i></span><span> Feels like <span id="feels-like">31</span>°C</span></p>
+                <p><span><i class="wi wi-humidity humidity-icon"></i></span><span> Humidity <span class="humidity">31</span>%</span></p>
+                <p><span><i class="fa-solid fa-wind"></i></span><span> Wind Speed <span class="wind-speed">31</span> m/s</span></p>
+            </div>
+        </div>
+    </section>
+<!-- Second section end here -->
+
+<!-- Third section start from here -->
+    <section class="third-section">
+        <div class="forecast">
+            <p class="date-forecast">16-07-2024</p>
+            <div class="image-tag"><img src="Images/cloud.png" alt="" id="image-forecast"></div> 
+            <div class="basic-info">
+                <p><span>Temperature</span>: <span class="temp-forecast">23</span>°C</p>
+                <p><span>Wind</span>: <span class="wind-forecast">23</span> m/s</p>
+                <p><span>Humidity</span>: <span class="humid-forecast">23</span>%</p>
+            </div>
+        </div>
+        <div class="forecast">
+            <p class="date-forecast">16-07-2024</p>
+            <div class="image-tag"><img src="Images/cloud.png" alt="" id="image-forecast"></div> 
+            <div class="basic-info">
+                <p><span>Temperature</span>: <span class="temp-forecast">23</span>°C</p>
+                <p><span>Wind</span>: <span class="wind-forecast">23</span> m/s</p>
+                <p><span>Humidity</span>: <span class="humid-forecast">23</span>%</p>
+            </div>
+        </div>
+        <div class="forecast">
+            <p class="date-forecast">16-07-2024</p>
+            <div class="image-tag"><img src="Images/cloud.png" alt="" id="image-forecast"></div> 
+            <div class="basic-info">
+                <p><span>Temperature</span>: <span class="temp-forecast">23</span>°C</p>
+                <p><span>Wind</span>: <span class="wind-forecast">23</span> m/s</p>
+                <p><span>Humidity</span>: <span class="humid-forecast">23</span>%</p>
+            </div>
+        </div>
+        <div class="forecast">
+            <p class="date-forecast">16-07-2024</p>
+            <div class="image-tag"><img src="Images/cloud.png" alt="" id="image-forecast"></div> 
+            <div class="basic-info">
+                <p><span>Temperature</span>: <span class="temp-forecast">23</span>°C</p>
+                <p><span>Wind</span>: <span class="wind-forecast">23</span> m/s</p>
+                <p><span>Humidity</span>: <span class="humid-forecast">23</span>%</p>
+            </div>
+        </div>
+        <div class="forecast">
+            <p class="date-forecast">16-07-2024</p>
+            <div class="image-tag"><img src="Images/cloud.png" alt="" id="image-forecast"></div> 
+            <div class="basic-info">
+                <p><span>Temperature</span>: <span class="temp-forecast">23</span>°C</p>
+                <p><span>Wind</span>: <span class="wind-forecast">23</span> m/s</p>
+                <p><span>Humidity</span>: <span class="humid-forecast">23</span>%</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Third section end here -->
+
+    <!-- Attaching the JS file -->
+    <script src="weather.js"></script>
+</body>
+
+</html>

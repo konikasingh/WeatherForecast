@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-image: url('Images/pexels-felixmittermeier-4644812.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+
+
+}
+
+.city-input-detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cityname {
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    /* background-color: red; */
+    text-align: center;
+    /* width: 10%; */
+}
+
+.city-head {
+    color: rgb(255, 255, 255);
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 1rem;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.inputfield {
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+
+.inputfield input {
+    padding: 0.4rem 1rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+}
+
+.inputfield input:focus {
+    background-color: #0C1837;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+}
+
+.inputfield button {
+    padding: 0.4rem 1rem;
+    font-size: 1.2rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.inputfield button:hover {
+    background-color: #0C1837;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+}
+.inputfield {
+    position: relative;
+}
+
+#recent-cities {
+    position: absolute;
+    top: 70%;
+    left: 0.5%;
+    right: 0;
+    width: 62%;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.2rem;
+    background-color: #0c18376f;
+    color: white;
+    border: 1px solid #0C1837;
+    font-weight: 600;
+}
+#recent-cities:hover{
+    background-color: #0C1837;
+    border: 1px solid #06163b87;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+
+/* 2section start from here */
+
+.second-sec {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img img {
+    width: 9rem;
+    height: 9rem;
+    filter: hue-rotate(90deg) brightness(0.8) invert(1);
+}
+
+.img{
+    background-color: #aba56f5b;
+    border-radius: 50%;
+}
+.right-sec {
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.left-sec {
+    display: flex;
+    color: white;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    background-color: rgba(17, 17, 52, 0.243);
+    /* padding: 1rem; */
+    align-items: center;
+    border-radius: 7px;
+}
+
+.tempt h1 {
+    font-size: 5rem;
+    padding: 1rem;
+}
+
+.extra-msg {
+    color: white;
+    font-weight: bold;
+    background-color: rgba(17, 17, 52, 0.452);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.extra-msg p {
+    padding: 0.4rem;
+}
+
+.tempt-rating p {
+    padding: 0.3rem;
+}
+
+
+/* third-sec start from here */
+
+.third-section {
+    width: 85%;
+    margin: 2rem auto;
+    background-color: #0a193d60;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.third-section img {
+    width: 7rem;
+    height: 7rem;
+   
+}
+
+.forecast {
+    margin-left: 1rem;
+    /* background-color: red; */
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    
+}
+.basic-info{
+    /* background-color: red; */
+    padding: 0.4rem;
+}
+
+
+.image-tag img{
+    
+    filter: hue-rotate(90deg) brightness(0.8) invert(1);
+}
+.image-tag{
+    background-color: #aba56f5b;
+    border-radius: 50%;
+}
+
+.date-forecast{
+    font-weight: 800;
+    margin-bottom: 0.2rem;
+}
+
+
+
+/* Media Queries */
+@media (max-width:1200px) {
+    html{
+        font-size: 12px;
+    }
+}
+@media (max-width:1000px) {
+    html{
+        font-size: 10px;
+    }
+    .third-section {
+        
+        margin-top: 8rem;
+    }
+    #recent-cities{
+        width: 60%;
+        padding: 0rem;
+    }
+}
+@media (max-width:805px) {
+    html{
+        font-size: 10px;
+    }
+    .third-section {
+        grid-template-columns: repeat(3,1fr);
+        width: 80%;
+        margin-top: 8rem;
+    }
+    .right-sec {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+    }
+}
+@media (max-width:605px) {
+    html{
+        font-size: 10px;
+    }
+    .third-section {
+        grid-template-columns: repeat(3,1fr);
+        width: 80%;
+        margin-top: 8rem;
+    }
+    .right-sec {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+    }
+    .cityname{
+        width: 20%;
+    }
+    #recent-cities{
+        font-size: 1.2rem;
+     }
+}
+@media (max-width:517px) {
+    html{
+        font-size: 8px;
+    }
+    .third-section {
+        grid-template-columns: repeat(3,1fr);
+        width: 80%;
+        margin-top: 8rem;
+    }
+    .right-sec {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+    }
+    #recent-cities{
+       font-size: 1.2rem;
+    }
+    
+}
+@media (max-width:448px) {
+    html{
+        font-size: 8px;
+    }
+    .third-section {
+        grid-template-columns: repeat(2,1fr);
+        width: 70%;
+        margin-top: 8rem;
+    }
+    .right-sec {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+    }
+    .cityname{
+        width: 20%;
+    }
+    #recent-cities{
+        width: 50%;
+        padding: 0rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:352px) {
+    html{
+        font-size: 8px;
+    }
+    .third-section {
+        grid-template-columns: repeat(2,1fr);
+        width: 70%;
+        margin-top: 8rem;
+    }
+    .right-sec {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+    }
+    .cityname{
+        width: 20%;
+    }
+    .img img {
+        width: 7rem;
+        height: 7rem;
+    }
+}
+@media (max-width:400px) {
+    .city-head{
+        font-size: 2rem;
+    }
+    .cityname{
+        margin-top: 2rem;
+    }
+    .tempt h1{
+        font-size: 3rem;
+    }
+   .extra-msg p{
+    font-size: 0.8rem;
+   }
+}
