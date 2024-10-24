@@ -1,3 +1,31 @@
+// 4. Location-Based Forecast: (100 marks)
+// ● Allow users to search for weather forecasts by city name. (15 marks)
+// ● Allow users to search weather forecasts for current location. (15 marks)
+// ● Add user interaction features such as buttons and input fields for
+// selecting locations and viewing different weather data. (10 marks)
+// ● Implement dropdown menu for recently searched cities (you can add
+// recently searched cities in dropdown using local or session storage).
+// Initially there should not be any dropdown since there is no searched city.
+// Clicking on any city in dropdown menu should update the weather data.
+// (20 marks)
+// ● Implement event listeners to handle user interactions and update the UI
+// accordingly. (10 marks)
+// ● Validate user inputs to prevent errors (e.g., invalid location, empty search
+// queries). (10 marks)
+// ● Fetch and display location specific weather forecasts, (e.g., temperature,
+// humidity, wind speed) for a user's location. (15 marks)
+// ● Use appropriate icons or graphics to represent weather conditions (e.g.,
+// sunny, cloudy, rainy). (5 marks)
+// 5. Extended Forecast Display: (30 marks)
+// ● Implement functionality to display extended weather forecasts for multiple
+// days (e.g., 5-day forecast). (15 marks)
+// ● Organize forecast data into a visually appealing and easy-to-read format.
+// (date, icon , temp, wind and humidity) (15 marks)
+// 6. Error Handling and Validation: (20 marks)
+// ● Handle API errors gracefully and display appropriate error messages to
+// users
+
+
 const city = document.querySelector("#city-name");
 const apikey = '7831e95fb5fb6c6e7cc737153bacd95a';
 
