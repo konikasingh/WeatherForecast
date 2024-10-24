@@ -60,7 +60,7 @@ This is a simple and responsive weather forecast application developed using Jav
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/weather-forecast-app.git
+   git clone (https://github.com/konikasingh/WeatherForecast/tree/main)
 2.	Navigate to the project directory:
 bash
 Copy code
